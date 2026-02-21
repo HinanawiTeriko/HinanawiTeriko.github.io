@@ -3,9 +3,9 @@
   --footer-icon: url(../images/taichi.png);
   --top-icon: url(../images/taichi.png);
   --sponsor-icon: url(../images/taichi.png);
-  --cursor-default: url(../images/cursor/tenshi-cursor-default.jpg), auto;
-  --cursor-pointer: url(../images/cursor/tenshi-cursor-pointer.jpg), pointer;
-  --cursor-text: url(../images/cursor/tenshi-cursor-text.jpg), text;
+  --cursor-default: auto;
+  --cursor-pointer: pointer;
+  --cursor-text: text;
 }
 
 :root {
