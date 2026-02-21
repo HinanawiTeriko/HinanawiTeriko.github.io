@@ -22,18 +22,15 @@
     
 
     <item>
-      <title>Test</title>
+      <title>Hello World</title>
       <link>http://localhost:1313/post/test/</link>
       <pubDate>Fri, 20 Feb 2026 23:36:47 &#43;0800</pubDate>
       <author>2208794899@qq.com (HinanawiTeriko)</author>
       <guid>http://localhost:1313/post/test/</guid>
       <description>
-        <![CDATA[<h1>Test</h1><p>作者：HinanawiTeriko（2208794899@qq.com）</p>
+        <![CDATA[<h1>Hello World</h1><p>作者：HinanawiTeriko（2208794899@qq.com）</p>
         
-          <h1 id="what-is-this">
-<a class="header-anchor" href="#what-is-this"></a>
-what is this
-</h1>
+          <p>Hello World ! ! !</p>
         
         <hr><p>本文2026-02-20首发于<a href='http://localhost:1313/'>HinanawiTeriko's Blog</a>，最后修改于2026-02-20</p>]]>
       </description>
