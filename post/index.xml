@@ -12,12 +12,65 @@
     
     <copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright>
     
-    <lastBuildDate>Tue, 17 Feb 2026 23:36:47 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 22 Feb 2026 21:00:47 +0800</lastBuildDate>
     
     
     <atom:link href="http://localhost:1313/post/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
+    
+    
+
+    <item>
+      <title>\[更新ing] 深度学习神经网络设计基础 1.简单的自定义神经网络</title>
+      <link>http://localhost:1313/post/net/net1/</link>
+      <pubDate>Sun, 22 Feb 2026 21:00:47 &#43;0800</pubDate>
+      <author>2208794899@qq.com (HinanawiTeriko)</author>
+      <guid>http://localhost:1313/post/net/net1/</guid>
+      <description>
+        <![CDATA[<h1>\[更新ing] 深度学习神经网络设计基础 1.简单的自定义神经网络</h1><p>作者：HinanawiTeriko（2208794899@qq.com）</p>
+        
+          <h1 id="引言">
+<a class="header-anchor" href="#%e5%bc%95%e8%a8%80"></a>
+引言
+</h1><ul>
+<li>这个系列用于记录笔者在学习深度学习中遇到的一些知识点</li>
+<li>所谓深度学习, 一开始或许是心血来潮吧, 但好像变得一发不可收拾了(笑), 虽然还在入门阶段就是了</li>
+<li>说是博客其实大概只是写给自己看的吧(笑), 我想应该不会有人看得懂我写的, 如果依托于我贫弱的文字表达能力的话</li>
+<li>大概会一直更新下去吧, 如果能记得更新博客的话(笑)</li>
+<li>顺带一提, 本系列大概一切代码都会依托于pytorch框架</li>
+</ul>
+<h1 id="正文">
+<a class="header-anchor" href="#%e6%ad%a3%e6%96%87"></a>
+正文
+</h1><blockquote>
+<p>本文需要一定的机器学习基础和数学基础, 理论上应该大致了解多层感知机以及掌握部分线性代数知识, 加分项是概率论哦</p>
+        
+        <hr><p>本文2026-02-22首发于<a href='http://localhost:1313/'>HinanawiTeriko's Blog</a>，最后修改于2026-02-22</p>]]>
+      </description>
+      
+    </item>
+    
+    
+
+    <item>
+      <title>关于为什么 $\sqrt{2}$ 是无理数</title>
+      <link>http://localhost:1313/post/prove_math1/</link>
+      <pubDate>Sun, 22 Feb 2026 15:00:47 &#43;0800</pubDate>
+      <author>2208794899@qq.com (HinanawiTeriko)</author>
+      <guid>http://localhost:1313/post/prove_math1/</guid>
+      <description>
+        <![CDATA[<h1>关于为什么 $\sqrt{2}$ 是无理数</h1><p>作者：HinanawiTeriko（2208794899@qq.com）</p>
+        
+          <h2 id="前期提要">
+<a class="header-anchor" href="#%e5%89%8d%e6%9c%9f%e6%8f%90%e8%a6%81"></a>
+前期提要
+</h2><p>笔者今日在耍手机途中恰巧看到曼士沉思录的视频, 其中提到一个证明&amp;\sqrt{2}&amp;是无理数的过程, 突然意识到好像从来没有思考过为什么$\sqrt{2}$是无理数, 故记录.</p>
+        
+        <hr><p>本文2026-02-22首发于<a href='http://localhost:1313/'>HinanawiTeriko's Blog</a>，最后修改于2026-02-22</p>]]>
+      </description>
+      
+    </item>
     
     
 

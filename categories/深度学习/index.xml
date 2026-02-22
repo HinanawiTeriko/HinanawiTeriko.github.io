@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>HinanawiTeriko&#39;s Blog</title>
-    <link>http://localhost:1313/</link>
+    <title>深度学习 on HinanawiTeriko&#39;s Blog</title>
+    <link>http://localhost:1313/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</link>
     <description>Recent content from HinanawiTeriko&#39;s Blog</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
@@ -15,7 +15,7 @@
     <lastBuildDate>Sun, 22 Feb 2026 21:50:47 +0800</lastBuildDate>
     
     
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss&#43;xml" />
+    <atom:link href="http://localhost:1313/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss&#43;xml" />
     
 
     
@@ -50,45 +50,6 @@
       </description>
       
         <category>深度学习</category>
-      
-    </item>
-    
-    
-
-    <item>
-      <title>关于为什么 $\sqrt{2}$ 是无理数</title>
-      <link>http://localhost:1313/post/prove_math1/</link>
-      <pubDate>Sun, 22 Feb 2026 15:00:47 &#43;0800</pubDate>
-      <author>2208794899@qq.com (HinanawiTeriko)</author>
-      <guid>http://localhost:1313/post/prove_math1/</guid>
-      <description>
-        <![CDATA[<h1>关于为什么 $\sqrt{2}$ 是无理数</h1><p>作者：HinanawiTeriko（2208794899@qq.com）</p>
-        
-          <h2 id="前期提要">
-<a class="header-anchor" href="#%e5%89%8d%e6%9c%9f%e6%8f%90%e8%a6%81"></a>
-前期提要
-</h2><p>笔者今日在耍手机途中恰巧看到曼士沉思录的视频, 其中提到一个证明&amp;\sqrt{2}&amp;是无理数的过程, 突然意识到好像从来没有思考过为什么$\sqrt{2}$是无理数, 故记录.</p>
-        
-        <hr><p>本文2026-02-22首发于<a href='http://localhost:1313/'>HinanawiTeriko's Blog</a>，最后修改于2026-02-22</p>]]>
-      </description>
-      
-    </item>
-    
-    
-
-    <item>
-      <title>Hello World</title>
-      <link>http://localhost:1313/post/test/</link>
-      <pubDate>Tue, 17 Feb 2026 23:36:47 &#43;0800</pubDate>
-      <author>2208794899@qq.com (HinanawiTeriko)</author>
-      <guid>http://localhost:1313/post/test/</guid>
-      <description>
-        <![CDATA[<h1>Hello World</h1><p>作者：HinanawiTeriko（2208794899@qq.com）</p>
-        
-          <p>Hello World ! ! !</p>
-        
-        <hr><p>本文2026-02-17首发于<a href='http://localhost:1313/'>HinanawiTeriko's Blog</a>，最后修改于2026-02-17</p>]]>
-      </description>
       
     </item>
     

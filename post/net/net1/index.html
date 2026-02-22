@@ -8,7 +8,7 @@
   name="viewport"
   content="width=device-width, initial-scale=1, shrink-to-fit=no"
 /><title>
-  关于为什么 $\sqrt{2}$ 是无理数 | HinanawiTeriko
+  [更新ing] 深度学习神经网络设计基础 1.简单的自定义神经网络 | HinanawiTeriko
 </title>
 <meta name="description" content="少女祈祷中..."/><script>
   window.siteConfig = JSON.parse("{\"anchor_icon\":null,\"base\":\"http://localhost:1313/\",\"clipboard\":{\"copyright\":{\"count\":50,\"enable\":false,\"license_type\":\"by-nc-sa\"},\"fail\":{\"en\":\"Copy failed (ﾟ⊿ﾟ)ﾂ\",\"ja\":\"コピー失敗 (ﾟ⊿ﾟ)ﾂ\",\"pt-br\":\"Falha ao copiar (ﾟ⊿ﾟ)ﾂ\",\"zh-cn\":\"复制失败 (ﾟ⊿ﾟ)ﾂ\",\"zh-tw\":\"複製失敗 (ﾟ⊿ﾟ)ﾂ\"},\"success\":{\"en\":\"Copy successfully (*^▽^*)\",\"ja\":\"コピー成功 (*^▽^*)\",\"pt-br\":\"Copiado com sucesso (*^▽^*)\",\"zh-cn\":\"复制成功 (*^▽^*)\",\"zh-tw\":\"複製成功 (*^▽^*)\"}},\"code_block\":{\"expand\":true},\"icon_font\":\"4552607_4k4bc36ef96\",\"outdate\":{\"daysago\":180,\"enable\":false,\"message\":{\"en\":\"This article was last updated on {time}. Please note that the content may no longer be applicable.\",\"ja\":\"この記事は最終更新日：{time}。記載内容が現在有効でない可能性がありますのでご注意ください。\",\"pt-br\":\"Este artigo foi atualizado pela última vez em {time}. Observe que o conteúdo pode não ser mais aplicável.\",\"zh-cn\":\"本文最后更新于 {time}，请注意文中内容可能已不适用。\",\"zh-tw\":\"本文最後更新於 {time}，請注意文中內容可能已不適用。\"}}}");
@@ -33,12 +33,12 @@
     type="font/woff2"
     crossorigin="anonymous"
   /><link rel="stylesheet" href="/css/loader.css" /><meta property="og:type" content="website" />
-  <meta property="og:title" content="关于为什么 $\sqrt{2}$ 是无理数 | HinanawiTeriko" />
+  <meta property="og:title" content="[更新ing] 深度学习神经网络设计基础 1.简单的自定义神经网络 | HinanawiTeriko" />
   <meta
     property="og:description"
     content="少女祈祷中..."
   />
-  <meta property="og:url" content="http://localhost:1313/post/prove_math1/" />
+  <meta property="og:url" content="http://localhost:1313/post/net/net1/" />
   <meta
     property="og:site_name"
     content="HinanawiTeriko&#39;s Blog"
@@ -48,8 +48,8 @@
     content="/"
   />
   <meta property="article:author" content="HinanawiTeriko" />
-  <meta property="article:published_time" content="2026-02-22T15:00:47&#43;08:00" />
-  <meta property="article:modified_time" content="2026-02-22T15:00:47&#43;08:00" /><meta name="twitter:card" content="summary" />
+  <meta property="article:published_time" content="2026-02-22T21:50:47&#43;08:00" />
+  <meta property="article:modified_time" content="2026-02-22T21:50:47&#43;08:00" /><meta name="twitter:card" content="summary" />
   <meta name="twitter:image" content="/" />
 <link rel="shortcut icon" href="/favicon.ico"><link rel="stylesheet" href="/css/main.css" /><link
     rel="preload"
@@ -121,9 +121,9 @@
       </a><a id="main-nav-toggle" class="nav-icon" aria-label="Toggle navigation" role="button"></a>
   </nav>
   <nav id="sub-nav" aria-label="Secondary navigation"></nav></div>
-<header id="header" aria-label="Site header"><picture></picture><img crossorigin="anonymous" fetchpriority="high" src="/images/tenshi/tenshi_cool1_1920x1080.jpg" alt="关于为什么 $\sqrt{2}$ 是无理数"><div id="header-outer">
+<header id="header" aria-label="Site header"><picture></picture><img crossorigin="anonymous" fetchpriority="high" src="/images/tenshi/tenshi_cool1_1920x1080.jpg" alt="[更新ing] 深度学习神经网络设计基础 1.简单的自定义神经网络"><div id="header-outer">
     <div id="header-title"><span id="logo">
-            <h1 data-aos="slide-up">关于为什么 $\sqrt{2}$ 是无理数</h1>
+            <h1 data-aos="slide-up">[更新ing] 深度学习神经网络设计基础 1.简单的自定义神经网络</h1>
           </span><h2 id="subtitle-wrap" data-aos="slide-down"></h2></div>
   </div>
 </header><div id="content"
@@ -137,8 +137,9 @@
 <div class="sidebar-toc-wrapper toc-div-class">
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#前期提要">前期提要</a></li>
-    <li><a href="#证明过程">证明过程</a></li>
+    <li><a href="#1-神经网络的层与块">1. 神经网络的层与块</a></li>
+    <li><a href="#2自定义网络">2.自定义网络</a></li>
+    <li><a href="#3自定义层">3.自定义层</a></li>
   </ul>
 </nav>
 </div></div>
@@ -159,7 +160,7 @@
   <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
     <div>分类</div>
     <div class="sidebar-state-number">
-      0
+      1
     </div>
   </a>
   <a class="sidebar-state-tag" href="/tags/" aria-label="sidebar-state-tag-link">
@@ -210,40 +211,110 @@
     class="article-date-link icon-calendar"
     data-aos="zoom-in"
   >
-    <time datetime="2026-02-22 15:00:47 &#43;0800 CST" itemprop="datePublished"
+    <time datetime="2026-02-22 21:50:47 &#43;0800 CST" itemprop="datePublished"
       >2026-02-22</time
     >
     <time style="display: none;" id="post-update-time"
       >2026-02-22</time
     >
   </span></div>
-</div><div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h2 id="前期提要">
-<a class="header-anchor" href="#%e5%89%8d%e6%9c%9f%e6%8f%90%e8%a6%81"></a>
-前期提要
-</h2><p>笔者今日在耍手机途中恰巧看到曼士沉思录的视频, 其中提到一个证明&amp;\sqrt{2}&amp;是无理数的过程, 突然意识到好像从来没有思考过为什么$\sqrt{2}$是无理数, 故记录.</p>
-<h2 id="证明过程">
-<a class="header-anchor" href="#%e8%af%81%e6%98%8e%e8%bf%87%e7%a8%8b"></a>
-证明过程
-</h2><ul>
-<li>已知: 无理数是无法写为整数分式形式的数, 即我们需要证明$\sqrt{2}$无法由整数分式形式表示</li>
+</div><div class="hr-line"></div><div class="e-content article-entry" itemprop="articleBody"><h1 id="引言">
+<a class="header-anchor" href="#%e5%bc%95%e8%a8%80"></a>
+引言
+</h1><ul>
+<li>这个系列用于记录笔者在学习深度学习中遇到的一些知识点</li>
+<li>所谓深度学习, 一开始或许是心血来潮吧, 但好像变得一发不可收拾了(笑), 虽然还在入门阶段就是了</li>
+<li>说是博客其实大概只是写给自己看的吧(笑), 我想应该不会有人看得懂我写的, 如果依托于我贫弱的文字表达能力的话</li>
+<li>大概会一直更新下去吧, 如果能记得更新博客的话(笑)</li>
+<li>顺带一提, 本系列大概一切代码都会依托于pytorch框架</li>
 </ul>
-$${\because \sqrt{2}^2 = 2}$$<p>我们不妨先假设 $\sqrt{2}$是有理数, 即<br>
-</p>
-$$\sqrt{2} = \frac{p}{q} \qquad 其中p,\, q \in Z^+ $$<p>则    <br>
-</p>
-$$ 2 = \frac{p^2}{q^2} $$<p>此时有
-</p>
-$$ p^2 = 2q^2 $$<p>所以$ \mathbf{p^2 是偶数,\, p是偶数} $</p>
-<p>即
-</p>
-$$ p = 2k $$<p>此时
-</p>
-$$ 2 = \frac{4k^2}{q^2} \qquad 即 q^2 = 2k^2 $$<p>故$ \mathbf{q^2为偶数,\, q为偶数} $</p>
-<p>则
-</p>
-$$ \frac{p}{q} = \frac{p/2}{q/2} $$<p>以此类推, 发现p和q可以无限缩小, 但正整数无法无限缩小, 故与条件冲突, 故得证 $\sqrt{2}$为无理数.</p>
+<h1 id="正文">
+<a class="header-anchor" href="#%e6%ad%a3%e6%96%87"></a>
+正文
+</h1><blockquote>
+<p>本文需要一定的机器学习基础和数学基础, 理论上应该大致了解多层感知机以及掌握部分线性代数知识, 加分项是概率论哦</p>
+</blockquote>
+<h2 id="1-神经网络的层与块">
+<a class="header-anchor" href="#1-%e7%a5%9e%e7%bb%8f%e7%bd%91%e7%bb%9c%e7%9a%84%e5%b1%82%e4%b8%8e%e5%9d%97"></a>
+1. 神经网络的层与块
+</h2><p>对于一个神经网络, 一层中包含了若干 <strong>参数(params)</strong> ,例如 <strong>权重(weights)</strong> 和 <strong>偏差(bias)</strong><br>
+我们可以用以下代码简单地创建一个神经网络对象</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">torch</span> <span class="kn">import</span> <span class="n">nn</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">net</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">256</span><span class="p">),</span> <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">(),</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="mi">20</span><span class="p">),</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span></span></code></pre></div><p>这样会创建一个三层的神经网络, 其中第一层为隐藏层, 后两层为线性层<br>
+此时,形如第一层与第二层组合而成的网络可被称为 <strong>块</strong></p>
+<blockquote>
+<p>在实际应用中, 人们逐渐发现将独立出一种比整个神经网络小, 但是比一层大的结构非常好用, 于是产生了块的概念, 关于块的作用在今后的文章会有所提及(其实是我还没学会)</p>
+</blockquote>
+<h2 id="2自定义网络">
+<a class="header-anchor" href="#2%e8%87%aa%e5%ae%9a%e4%b9%89%e7%bd%91%e7%bb%9c"></a>
+2.自定义网络
+</h2><p>使用torch内置的模块<code>nn.Sequential</code>创建神经网络非常方便, 但是缺乏自由度<br>
+于是我们可以这样自定义神经网络</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">torch</span> <span class="kn">import</span> <span class="n">nn</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MySequential</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">hidden</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">256</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">relu</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">ReLU</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">linear</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">out</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">X</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">hidden</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">X</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">relu</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">X</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">linear</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">X</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">out</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="n">X</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span> <span class="c1"># 可以做一些小巧思处理</span>
+</span></span><span class="line"><span class="cl">            <span class="n">X</span> <span class="o">/=</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">X</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">net</span> <span class="o">=</span> <span class="n">MySequential</span><span class="p">()</span> <span class="c1">#等同于 net = nn.Sequential(nn.Linear(10, 256), nn.ReLU(), nn.Linear(256, 20), nn.Linear(20, 1))</span>
+</span></span></code></pre></div><p>在调用 <code>net(X)</code> 时, 对象会自动调用<code>forward</code>方法,我们可以在该方法加入一些<code>nn.Sequential</code>无法进行的处理</p>
+<h2 id="3自定义层">
+<a class="header-anchor" href="#3%e8%87%aa%e5%ae%9a%e4%b9%89%e5%b1%82"></a>
+3.自定义层
+</h2><p>有时某个torch未定义的操作需要被我们反复使用, 此时就需要创建一个自定义层确保每次需要可以方便地调用它</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">torch</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">torch</span> <span class="kn">import</span> <span class="n">nn</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MyLayer</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">inputs</span><span class="p">,</span> <span class="n">outputs</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># 随机初始化权重和偏差</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">weights</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Parameter</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">inputs</span><span class="p">,</span> <span class="n">outputs</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">bias</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Parameter</span><span class="p">(</span><span class="n">torch</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="n">outputs</span><span class="p">,</span> <span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">X</span> <span class="o">=</span> <span class="n">torch</span><span class="o">.</span><span class="n">matmul</span><span class="p">((</span><span class="n">X</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">weights</span><span class="p">))</span> <span class="o">+</span> <span class="bp">self</span><span class="o">.</span><span class="n">bias</span><span class="o">.</span><span class="n">data</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">X</span>
+</span></span><span class="line"><span class="cl"><span class="n">net</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Linear</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">256</span><span class="p">),</span> <span class="n">MyLayer</span><span class="p">(</span><span class="mi">256</span><span class="p">,</span> <span class="mi">1</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 或者创建一个无参数的层</span>
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">LayerNoParams</span><span class="p">(</span><span class="n">nn</span><span class="o">.</span><span class="n">Module</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">forward</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">X</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">X</span> <span class="o">=</span> <span class="n">X</span> <span class="o">-</span> <span class="n">X</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">X</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">net</span> <span class="o">=</span> <span class="n">nn</span><span class="o">.</span><span class="n">Sequential</span><span class="p">(</span><span class="n">MyLayer</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">LayerNoParams</span><span class="p">())</span>
+</span></span></code></pre></div><h1 id="尾声">
+<a class="header-anchor" href="#%e5%b0%be%e5%a3%b0"></a>
+尾声
+</h1><ul>
+<li>笔者对神经网络的理解程度较低,若文中有任何错误,欢迎批评斧正!</li>
+</ul>
 </div>
-    <footer class="article-footer"><ul class="article-category-list"></ul>
+    <footer class="article-footer"><ul class="article-category-list"><li class="article-tag-list-item" data-aos="zoom-in">
+    <a
+      class="article-category-link"
+      href="/categories/%e6%b7%b1%e5%ba%a6%e5%ad%a6%e4%b9%a0"
+      data-aos="zoom-in"
+      >深度学习</a
+    >
+    </li></ul>
 <ul class="article-tag-list" itemprop="keywords"></ul>
 </footer>
   </div><nav
@@ -251,29 +322,17 @@ $$ \frac{p}{q} = \frac{p/2}{q/2} $$<p>以此类推, 发现p和q可以无限缩�
     aria-label="Article navigation"
     data-aos="fade-up"
   ><div class="article-nav-link-wrap left"><img
-            data-src="/images/tenshi/tenshi_cool1.jpg"
-            data-sizes="auto"
-            alt="Hello World"
-            class="lazyload"
-          /><a
-          href="/post/test/"
-          aria-label="前一篇:Hello World"
-          title="前一篇:Hello World"
-        ></a>
-        <div class="article-nav-caption">前一篇</div>
-        <h3 class="article-nav-title">Hello World</h3>
-      </div><div class="article-nav-link-wrap right"><img
-              data-src="/images/tenshi/tenshi_cool1.jpg"
+              data-src="/images/tenshi/tenshi_cool2.png"
               data-sizes="auto"
-              alt="\[更新ing] 深度学习神经网络设计基础 1.简单的自定义神经网络"
+              alt="关于为什么 $\sqrt{2}$ 是无理数"
               class="lazyload"
             /><a
-          href="/post/net/net1/"
-          aria-label="后一篇:\[更新ing] 深度学习神经网络设计基础 1.简单的自定义神经网络"
-          title="后一篇:\[更新ing] 深度学习神经网络设计基础 1.简单的自定义神经网络"
+          href="/post/prove_math1/"
+          aria-label="前一篇:关于为什么 $\sqrt{2}$ 是无理数"
+          title="前一篇:关于为什么 $\sqrt{2}$ 是无理数"
         ></a>
-        <div class="article-nav-caption">后一篇</div>
-        <h3 class="article-nav-title">\[更新ing] 深度学习神经网络设计基础 1.简单的自定义神经网络</h3>
+        <div class="article-nav-caption">前一篇</div>
+        <h3 class="article-nav-title">关于为什么 $\sqrt{2}$ 是无理数</h3>
       </div></nav></article></section>
         </div><footer id="footer" aria-label="Site footer">
   <div style="width: 100%; overflow: hidden">
@@ -295,10 +354,10 @@ $$ \frac{p}{q} = \frac{p/2}{q/2} $$<p>以此类推, 发现p和q可以无限缩�
         >
       </div><div>
         <span class="icon-brush"
-          >&nbsp;573</span
+          >&nbsp;1.2k</span
         >
         &nbsp;|&nbsp;
-        <span class="icon-coffee">&nbsp;00:03</span>
+        <span class="icon-coffee">&nbsp;00:04</span>
       </div><div>
         <span class="icon-eye"></span>
         <span id="busuanzi_container_site_pv"
@@ -324,8 +383,9 @@ $$ \frac{p}{q} = \frac{p/2}{q/2} $$<p>以此类推, 发现p和q可以无限缩�
 <div class="sidebar-toc-wrapper toc-div-class">
   <nav id="TableOfContents">
   <ul>
-    <li><a href="#前期提要">前期提要</a></li>
-    <li><a href="#证明过程">证明过程</a></li>
+    <li><a href="#1-神经网络的层与块">1. 神经网络的层与块</a></li>
+    <li><a href="#2自定义网络">2.自定义网络</a></li>
+    <li><a href="#3自定义层">3.自定义层</a></li>
   </ul>
 </nav>
 </div></div>
@@ -346,7 +406,7 @@ $$ \frac{p}{q} = \frac{p/2}{q/2} $$<p>以此类推, 发现p和q可以无限缩�
   <a class="sidebar-state-category" href="/categories/" aria-label="sidebar-state-category-link">
     <div>分类</div>
     <div class="sidebar-state-number">
-      0
+      1
     </div>
   </a>
   <a class="sidebar-state-tag" href="/tags/" aria-label="sidebar-state-tag-link">
@@ -437,9 +497,9 @@ $$ \frac{p}{q} = \frac{p/2}{q/2} $$<p>以此类推, 发现p和q可以无限缩�
   <div><script data-pjax>
         window.REIMU_POST = {
           author: "HinanawiTeriko",
-          title: "关于为什么 $\\sqrt{2}$ 是无理数",
-          url: "http:\/\/localhost:1313\/post\/prove_math1\/",
-          description: " 前期提要 笔者今日在耍手机途中恰巧看到曼士沉思录的视频, 其中提到一个证明\u0026amp;\\sqrt{2}\u0026amp;是无理数的过程, 突然意识到好像从来没有思考过为什么$\\sqrt{2}$是无理数, 故记录.\n",
+          title: "[更新ing] 深度学习神经网络设计基础 1.简单的自定义神经网络",
+          url: "http:\/\/localhost:1313\/post\/net\/net1\/",
+          description: " 引言 这个系列用于记录笔者在学习深度学习中遇到的一些知识点 所谓深度学习, 一开始或许是心血来潮吧, 但好像变得一发不可收拾了(笑), 虽然还在入门阶段就是了 说是博客其实大概只是写给自己看的吧(笑), 我想应该不会有人看得懂我写的, 如果依托于我贫弱的文字表达能力的话 大概会一直更新下去吧, 如果能记得更新博客的话(笑) 顺带一提, 本系列大概一切代码都会依托于pytorch框架 正文 本文需要一定的机器学习基础和数学基础, 理论上应该大致了解多层感知机以及掌握部分线性代数知识, 加分项是概率论哦\n",
           cover: "http:\/\/localhost:1313\/images\/tenshi\/tenshi_cool1_1920x1080.jpg",
         };
       </script><script src="/js/insert_highlight.js" data-pjax ></script><script src="/js/tabs.js" data-pjax defer></script><script type="module" data-pjax>const PhotoSwipeLightbox = (await safeImport("https:\/\/npm.webcache.cn\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js", "sha384-DiL6M\/gG\u002bwmTxmCRZyD1zee6lIhawn5TGvED0FOh7fXcN9B0aZ9dexSF\/N6lrZi\/")).default;const initPswp = (gallery, children) => {
