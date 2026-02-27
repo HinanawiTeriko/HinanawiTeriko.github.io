@@ -22,26 +22,24 @@
     
 
     <item>
-      <title>[更新ing] 深度学习神经网络设计基础 2.卷积的理解</title>
+      <title>[更新中] 深度学习神经网络设计基础 2.卷积的理解</title>
       <link>http://localhost:1313/post/net/net2/</link>
       <pubDate>Sat, 28 Feb 2026 01:10:47 &#43;0800</pubDate>
       <author>2208794899@qq.com (HinanawiTeriko)</author>
       <guid>http://localhost:1313/post/net/net2/</guid>
       <description>
-        <![CDATA[<h1>[更新ing] 深度学习神经网络设计基础 2.卷积的理解</h1><p>作者：HinanawiTeriko（2208794899@qq.com）</p>
+        <![CDATA[<h1>[更新中] 深度学习神经网络设计基础 2.卷积的理解</h1><p>作者：HinanawiTeriko（2208794899@qq.com）</p>
         
           <h1 id="正文">
 <a class="header-anchor" href="#%e6%ad%a3%e6%96%87"></a>
 正文
 </h1><blockquote>
-<p>本文主要介绍笔者对卷积在数学上的理解以及在神经网络中的初步应用</p>
+<p>本文主要介绍笔者对卷积在数学上的理解，以及其在神经网络中的初步应用。</p>
 </blockquote>
 <h2 id="1-卷积的数学定义">
 <a class="header-anchor" href="#1-%e5%8d%b7%e7%a7%af%e7%9a%84%e6%95%b0%e5%ad%a6%e5%ae%9a%e4%b9%89"></a>
 1. 卷积的数学定义
-</h2><p>在数学上, 我们定义 $\mathbf{f(x)对g(x)的卷积为f⋆g, 其定义式为}$<br>
-<strong>连续形式</strong>
-</p>
+</h2><p>在数学上，我们定义函数 \(f\) 对 \(g\) 的卷积为 \(f \star g\)，其定义式为：</p>
         
         <hr><p>本文2026-02-28首发于<a href='http://localhost:1313/'>HinanawiTeriko's Blog</a>，最后修改于2026-02-28</p>]]>
       </description>
