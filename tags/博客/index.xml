@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>博客 on HinanawiTeriko's Blog</title><link>https://hinanawiteriko.github.io/tags/%E5%8D%9A%E5%AE%A2/</link><description>Recent content from HinanawiTeriko's Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>2208794899@qq.com (HinanawiTeriko)</managingEditor><webMaster>2208794899@qq.com (HinanawiTeriko)</webMaster><copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright><lastBuildDate>Mon, 22 Jun 2026 02:21:20 +0800</lastBuildDate><atom:link href="https://hinanawiteriko.github.io/tags/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml"/><item><title>绕过网易云音乐 VIP 限制，在静态博客中嵌入完整版歌单</title><link>https://hinanawiteriko.github.io/post/bypass-netease-vip/</link><pubDate>Mon, 22 Jun 2026 02:21:20 +0800</pubDate><author>2208794899@qq.com (HinanawiTeriko)</author><guid>https://hinanawiteriko.github.io/post/bypass-netease-vip/</guid><description>
+<![CDATA[<h1>绕过网易云音乐 VIP 限制，在静态博客中嵌入完整版歌单</h1><p>作者：HinanawiTeriko（2208794899@qq.com）</p>
+        
+          <h2 id="起因">
+<a class="header-anchor" href="#%e8%b5%b7%e5%9b%a0"></a>
+起因
+</h2><p>我的 Hugo 博客使用 Reimu 主题的 APlayer + MetingJS 组件来展示歌单。默认情况下，MetingJS 调用公共 Meting API 解析网易云音乐链接，生成的播放器只能播放 30 秒试听片段——即使是自己上传的歌曲或已购买的专辑。</p>
+        
+        <hr><p>本文2026-06-22首发于<a href='https://hinanawiteriko.github.io/'>HinanawiTeriko's Blog</a>，最后修改于2026-06-22</p>]]></description><category>杂谈</category></item></channel></rss>

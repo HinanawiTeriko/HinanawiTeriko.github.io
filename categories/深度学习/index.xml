@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>深度学习 on HinanawiTeriko's Blog</title><link>https://hinanawiteriko.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/</link><description>Recent content from HinanawiTeriko's Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>2208794899@qq.com (HinanawiTeriko)</managingEditor><webMaster>2208794899@qq.com (HinanawiTeriko)</webMaster><copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright><lastBuildDate>Sat, 28 Feb 2026 01:10:47 +0800</lastBuildDate><atom:link href="https://hinanawiteriko.github.io/categories/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/index.xml" rel="self" type="application/rss+xml"/><item><title>[更新中] 深度学习神经网络设计基础 2.卷积的理解</title><link>https://hinanawiteriko.github.io/post/net/net2/</link><pubDate>Sat, 28 Feb 2026 01:10:47 +0800</pubDate><author>2208794899@qq.com (HinanawiTeriko)</author><guid>https://hinanawiteriko.github.io/post/net/net2/</guid><description>
+<![CDATA[<h1>[更新中] 深度学习神经网络设计基础 2.卷积的理解</h1><p>作者：HinanawiTeriko（2208794899@qq.com）</p>
+        
+          <h1 id="正文">
+<a class="header-anchor" href="#%e6%ad%a3%e6%96%87"></a>
+正文
+</h1><blockquote>
+<p>本文主要介绍笔者对卷积在数学上的理解，以及其在神经网络中的初步应用。</p>
+</blockquote>
+<h2 id="1-卷积的数学定义">
+<a class="header-anchor" href="#1-%e5%8d%b7%e7%a7%af%e7%9a%84%e6%95%b0%e5%ad%a6%e5%ae%9a%e4%b9%89"></a>
+1. 卷积的数学定义
+</h2><p>在数学上，我们定义函数 $f$ 对 $g$ 的卷积为 $f \star g$，其定义式为：</p>
+        
+        <hr><p>本文2026-02-28首发于<a href='https://hinanawiteriko.github.io/'>HinanawiTeriko's Blog</a>，最后修改于2026-02-28</p>]]></description><category>深度学习</category></item><item><title>[更新ing] 深度学习神经网络设计基础 1.简单的自定义神经网络</title><link>https://hinanawiteriko.github.io/post/net/net1/</link><pubDate>Sun, 22 Feb 2026 21:50:47 +0800</pubDate><author>2208794899@qq.com (HinanawiTeriko)</author><guid>https://hinanawiteriko.github.io/post/net/net1/</guid><description>
+<![CDATA[<h1>[更新ing] 深度学习神经网络设计基础 1.简单的自定义神经网络</h1><p>作者：HinanawiTeriko（2208794899@qq.com）</p>
+        
+          <h1 id="引言">
+<a class="header-anchor" href="#%e5%bc%95%e8%a8%80"></a>
+引言
+</h1><ul>
+<li>这个系列用于记录笔者在学习深度学习中遇到的一些知识点</li>
+<li>所谓深度学习, 一开始或许是心血来潮吧, 但好像变得一发不可收拾了(笑), 虽然还在入门阶段就是了</li>
+<li>说是博客其实大概只是写给自己看的吧(笑), 我想应该不会有人看得懂我写的, 如果依托于我贫弱的文字表达能力的话</li>
+<li>大概会一直更新下去吧, 如果能记得更新博客的话(笑)</li>
+<li>顺带一提, 本系列大概一切代码都会依托于pytorch框架</li>
+</ul>
+<h1 id="正文">
+<a class="header-anchor" href="#%e6%ad%a3%e6%96%87"></a>
+正文
+</h1><blockquote>
+<p>本文需要一定的机器学习基础和数学基础, 理论上应该大致了解多层感知机以及掌握部分线性代数知识, 加分项是概率论哦</p>
+        
+        <hr><p>本文2026-02-22首发于<a href='https://hinanawiteriko.github.io/'>HinanawiTeriko's Blog</a>，最后修改于2026-02-22</p>]]></description><category>深度学习</category></item></channel></rss>
