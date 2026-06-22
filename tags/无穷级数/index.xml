@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>数学 on HinanawiTeriko's Blog</title><link>https://hinanawiteriko.github.io/categories/%E6%95%B0%E5%AD%A6/</link><description>Recent content from HinanawiTeriko's Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>2208794899@qq.com (HinanawiTeriko)</managingEditor><webMaster>2208794899@qq.com (HinanawiTeriko)</webMaster><copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright><lastBuildDate>Tue, 23 Jun 2026 01:00:00 +0800</lastBuildDate><atom:link href="https://hinanawiteriko.github.io/categories/%E6%95%B0%E5%AD%A6/index.xml" rel="self" type="application/rss+xml"/><item><title>无穷级数复习笔记</title><link>https://hinanawiteriko.github.io/post/infinite-series-notes/</link><pubDate>Tue, 23 Jun 2026 01:00:00 +0800</pubDate><author>2208794899@qq.com (HinanawiTeriko)</author><guid>https://hinanawiteriko.github.io/post/infinite-series-notes/</guid><description>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>无穷级数 on HinanawiTeriko's Blog</title><link>https://hinanawiteriko.github.io/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/</link><description>Recent content from HinanawiTeriko's Blog</description><generator>Hugo</generator><language>zh-CN</language><managingEditor>2208794899@qq.com (HinanawiTeriko)</managingEditor><webMaster>2208794899@qq.com (HinanawiTeriko)</webMaster><copyright>本博客所有文章除特别声明外，均采用 BY-NC-SA 许可协议。转载请注明出处！</copyright><lastBuildDate>Tue, 23 Jun 2026 01:00:00 +0800</lastBuildDate><atom:link href="https://hinanawiteriko.github.io/tags/%E6%97%A0%E7%A9%B7%E7%BA%A7%E6%95%B0/index.xml" rel="self" type="application/rss+xml"/><item><title>无穷级数复习笔记</title><link>https://hinanawiteriko.github.io/post/infinite-series-notes/</link><pubDate>Tue, 23 Jun 2026 01:00:00 +0800</pubDate><author>2208794899@qq.com (HinanawiTeriko)</author><guid>https://hinanawiteriko.github.io/post/infinite-series-notes/</guid><description>
 <![CDATA[<h1>无穷级数复习笔记</h1><p>作者：HinanawiTeriko（2208794899@qq.com）</p>
         
           <h2 id="一常见函数的泰勒展开式及其衍生">
@@ -78,12 +78,4 @@
 1.2 衍生技巧
 </h3><p>由 $\frac{1}{1-x}$ 出发：</p>
         
-        <hr><p>本文2026-06-23首发于<a href='https://hinanawiteriko.github.io/'>HinanawiTeriko's Blog</a>，最后修改于2026-06-23</p>]]></description><category>数学</category></item><item><title>关于为什么 √2 是无理数</title><link>https://hinanawiteriko.github.io/post/prove_math1/</link><pubDate>Sun, 22 Feb 2026 15:00:47 +0800</pubDate><author>2208794899@qq.com (HinanawiTeriko)</author><guid>https://hinanawiteriko.github.io/post/prove_math1/</guid><description>
-<![CDATA[<h1>关于为什么 √2 是无理数</h1><p>作者：HinanawiTeriko（2208794899@qq.com）</p>
-        
-          <h2 id="前期提要">
-<a class="header-anchor" href="#%e5%89%8d%e6%9c%9f%e6%8f%90%e8%a6%81"></a>
-前期提要
-</h2><p>笔者今日在耍手机途中恰巧看到曼士沉思录的视频, 其中提到一个证明&amp;\sqrt{2}&amp;是无理数的过程, 突然意识到好像从来没有思考过为什么$\sqrt{2}$是无理数, 故记录.</p>
-        
-        <hr><p>本文2026-02-22首发于<a href='https://hinanawiteriko.github.io/'>HinanawiTeriko's Blog</a>，最后修改于2026-02-22</p>]]></description><category>数学</category></item></channel></rss>
+        <hr><p>本文2026-06-23首发于<a href='https://hinanawiteriko.github.io/'>HinanawiTeriko's Blog</a>，最后修改于2026-06-23</p>]]></description><category>数学</category></item></channel></rss>
