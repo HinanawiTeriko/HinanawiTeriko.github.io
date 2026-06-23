@@ -36,6 +36,12 @@
 					<td>$(-1,1)$</td>
 			</tr>
 			<tr>
+					<td>$\frac{1}{\sqrt{1+x}}$</td>
+					<td>$\sum_{n=0}^{\infty} \binom{-\frac{1}{2}}{n} x^n = \sum_{n=0}^{\infty} (-1)^n \frac{(2n)!}{4^n (n!)^2} x^n$</td>
+					<td>$(-1,1)$</td>
+					<td>$(-1,1]$</td>
+			</tr>
+			<tr>
 					<td>$e^x$</td>
 					<td>$\sum_{n=0}^{\infty} \frac{x^n}{n!} = 1 + x + \frac{x^2}{2!} + \cdots$</td>
 					<td>$(-\infty,\infty)$</td>
